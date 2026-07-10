@@ -53,7 +53,7 @@ Syntax: <Component>Content Here</Component>;
 
 
 A Fragment is a React component used to group multiple JSX elements without adding an extra HTML element to the DOM.
-Example:1 Shorthand Fragment
+Example:1 Shorthand Fragment (Iternaly it is wroked Named Fragment)
 <>
   <h1>Hello</h1>
   <p>React</p>
