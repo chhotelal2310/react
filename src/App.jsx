@@ -1,7 +1,9 @@
 import React from "react";
 import BookStore from "./componets/BookStore";
 import ControllAndUncontrollComponent from "./componets/ControllAndUncontrollComponent";
-import ParentAB from "./componets/lifitingStateUP/ParentAB";
+// import ParentAB from "./componets/lifitingStateUP/ParentAB";
+import NewComponent from "./componets/hoc/HOC";
+import UserWithLoading from "./componets/hoc/HOC";
 
 const App = () => {
   return (
@@ -11,7 +13,11 @@ const App = () => {
       {/* <ControllAndUncontrollComponent /> */}
 
       {/*************************** Lifting State UP *******************************************/}
-      <ParentAB />
+      {/* <ParentAB /> */}
+
+      {/*************************** Higher Order Component *************************************/}
+      {/* <NewComponent /> */}
+      {/* <UserWithLoading loading={true} users={[{ id: 1, name: "Rahul" }]} /> */}
     </div>
   );
 };
