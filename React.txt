@@ -1,0 +1,75 @@
+A Higher-Order Component (HOC) is a function that take a component as an argument and return a new enhanced component with additional functionality.
+Syntax:const EnhancedComponent = higherOrderComponent(OriginalComponent);
+
+Advantages of HOC:
+1.Reuse code across multiple components.
+2.Reduce code duplication.
+3.Keep components clean and simple.
+4.Easy to maintain.
+5.Separate UI from business logic.
+
+Disadvantages of HOC:
+1.Nested Wrappers
+Ex. withAuth(withTheme(withLoading(Profile)));
+2.Harder to debug.
+3.Props Collision
+
+
+
+Example:
+const User = ({ users }) => {
+  return (
+    <ul>
+      {users.map((user) => (
+        <li key={user.id}>{user.name}</li>
+      ))}
+    </ul>
+  );
+};
+
+const withLoading = (Component) => {
+  return function ({ loading, ...props }) {
+    if (loading) {
+      return <h2>Loading...</h2>;
+    }
+    return <Component {...props} />;
+  };
+};
+
+const UserWithLoading = withLoading(User);
+
+export default UserWithLoading;
+
+Use:
+<UserWithLoading loading={true} users={[{ id: 1, name: "Rahul" }]} />
+
+
+
+What is children Prop in React?
+The children prop is a special prop in React used to pass content (text, JSX, components, elements) between the opening and closing tags of a component.
+
+Syntax: <Component>Content Here</Component>;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
