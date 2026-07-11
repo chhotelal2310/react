@@ -4,7 +4,7 @@ import ControllAndUncontrollComponent from "./componets/ControllAndUncontrollCom
 // import ParentAB from "./componets/lifitingStateUP/ParentAB";
 import NewComponent from "./componets/hoc/HOC";
 import UserWithLoading from "./componets/hoc/HOC";
-import Box from "./componets/childrenProps/ChildrenProps";
+// import Box from "./componets/childrenProps/ChildrenProps";
 
 const App = () => {
   return (
@@ -22,11 +22,10 @@ const App = () => {
 
       {/********************************** Children Props ***************************************/}
       {/* <Box>Hello Children Props</Box> */}
-
-      <Box>
+      {/* <Box>
         <p>Profile</p>
         <p>Rahul Kumar</p>
-      </Box>
+      </Box> */}
     </div>
   );
 };
