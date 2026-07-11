@@ -1,3 +1,34 @@
+/*********************************************** use **********************************/
+/**************************************************************************************/
+/**************************************************************************************/
+const User = ({ users }) => {
+  return (
+    <ul>
+      {users.map((user) => (
+        <li key={user.id}>{user.name}</li>
+      ))}
+    </ul>
+  );
+};
+
+const withLoading = (Component) => {
+  return function ({ loading, ...props }) {
+    if (loading) {
+      return <h2>Loading...</h2>;
+    }
+    return <Component {...props} />;
+  };
+};
+
+const UserWithLoading = withLoading(User);
+
+export default UserWithLoading;
+
+// Use:==>
+<UserWithLoading loading={true} users={[{ id: 1, name: "Rahul" }]} />;
+
+
+
 /************************************* Example-1****************************************************/
 /***************** Basic Component ********************/
 // const Welcome = () => {
@@ -44,31 +75,4 @@
 
 // export default UserWithLoading;
 
-/*********************************************** use **********************************/
-/**************************************************************************************/
-/**************************************************************************************/
-const User = ({ users }) => {
-  return (
-    <ul>
-      {users.map((user) => (
-        <li key={user.id}>{user.name}</li>
-      ))}
-    </ul>
-  );
-};
 
-const withLoading = (Component) => {
-  return function ({ loading, ...props }) {
-    if (loading) {
-      return <h2>Loading...</h2>;
-    }
-    return <Component {...props} />;
-  };
-};
-
-const UserWithLoading = withLoading(User);
-
-export default UserWithLoading;
-
-// Use:==>
-<UserWithLoading loading={true} users={[{ id: 1, name: "Rahul" }]} />;
