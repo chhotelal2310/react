@@ -1,11 +1,12 @@
 import React from "react";
-import BookStore from "./componets/BookStore";
-import ControllAndUncontrollComponent from "./componets/ControllAndUncontrollComponent";
+// import BookStore from "./componets/BookStore";
+// import ControllAndUncontrollComponent from "./componets/ControllAndUncontrollComponent";
 // import ParentAB from "./componets/lifitingStateUP/ParentAB";
-import NewComponent from "./componets/hoc/HOC";
-import UserWithLoading from "./componets/hoc/HOC";
-import Employee from "./componets/propsvaiidations/PropsValidation";
+// import NewComponent from "./componets/hoc/HOC";
+// import UserWithLoading from "./componets/hoc/HOC";
+// import Employee from "./componets/propsvaiidations/PropsValidation";
 // import Box from "./componets/childrenProps/ChildrenProps";
+import ReactVersion from "./componets/reactversionatruntime/ReactVersion";
 
 const App = () => {
   return (
@@ -29,7 +30,10 @@ const App = () => {
       </Box> */}
 
       {/********************************** Props Validations ***************************************/}
-      <Employee name="Rahul" age={25} salary={50000} isActive={true} />
+      {/* <Employee name="Rahul" age={25} salary={50000} isActive={true} /> */}
+
+      {/********************************** Checking React Version at run time **********************/}
+      <ReactVersion />
     </div>
   );
 };
