@@ -4,6 +4,7 @@ import ControllAndUncontrollComponent from "./componets/ControllAndUncontrollCom
 // import ParentAB from "./componets/lifitingStateUP/ParentAB";
 import NewComponent from "./componets/hoc/HOC";
 import UserWithLoading from "./componets/hoc/HOC";
+import Employee from "./componets/propsvaiidations/PropsValidation";
 // import Box from "./componets/childrenProps/ChildrenProps";
 
 const App = () => {
@@ -26,6 +27,9 @@ const App = () => {
         <p>Profile</p>
         <p>Rahul Kumar</p>
       </Box> */}
+
+      {/********************************** Props Validations ***************************************/}
+      <Employee name="Rahul" age={25} salary={50000} isActive={true} />
     </div>
   );
 };
