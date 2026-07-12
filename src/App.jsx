@@ -7,6 +7,10 @@ import React from "react";
 // import Employee from "./componets/propsvaiidations/PropsValidation";
 // import Box from "./componets/childrenProps/ChildrenProps";
 import ReactVersion from "./componets/reactversionatruntime/ReactVersion";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Home from "./componets/routing/Home";
+import About from "./componets/routing/About";
+import Contact from "./componets/routing/Contact";
 
 const App = () => {
   return (
@@ -33,7 +37,21 @@ const App = () => {
       {/* <Employee name="Rahul" age={25} salary={50000} isActive={true} /> */}
 
       {/********************************** Checking React Version at run time **********************/}
-      <ReactVersion />
+      {/* <ReactVersion /> */}
+
+      {/**********************************  Routing  ************************************************/}
+      <BrowserRouter>
+        <nav className=" space-x-4">
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
