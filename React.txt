@@ -67,21 +67,67 @@ Example:2 Named Fragment
 
 Note: Shorthand Fragment syntax cannot receive props like key.
 
+/*********************************************** Lazy Loading *******************************/
+Example with routing:
+import React, { Suspense } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+const Home = React.lazy(() => import("./pages/Home"));
+const About = React.lazy(() => import("./pages/About"));
+const Contact = React.lazy(() => import("./pages/Contact"));
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Suspense fallback={<h2>Loading page...</h2>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+
+
+Benefits of React.lazy()
+1. Faster initial load
+2. Better performance
+3. Smaller bundle size
+4. Better user experience
+
+Limitations of React.lazy()
+1. It works only for default export
+const About = React.lazy(() => import("./About"));
+About.js
+export default About;
+
+Not directly for named export:
+export const About = () => {};
+
+2. It must be used inside Suspense: If not, React will throw an error.
+3. It is for components only: You cannot use React.lazy() for normal functions, variables, or hooks.
+                              It is only for React components.
 
 
 
+How to use named export with React.lazy()
+export const About = () => {
+  return <h1>About Page</h1>;
+};
+const About = React.lazy(() =>
+  import("./About").then((module) => ({
+    default: module.About,
+  }))
+);
 
 
 
+What is code splitting?
+Code splitting means dividing your JavaScript into smaller parts so that only the needed part is loaded when required. React.lazy() helps with this.
 
-
-
-
-
-
-
-
-
-
-
-
+What happens if Suspense is not used?
+React will throw an error because it does not know what to show while the lazy component is loading.
