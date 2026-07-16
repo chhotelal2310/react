@@ -131,3 +131,12 @@ Code splitting means dividing your JavaScript into smaller parts so that only th
 
 What happens if Suspense is not used?
 React will throw an error because it does not know what to show while the lazy component is loading.
+
+Q.Can I import an SVG file as a React Component?
+Yes. React allows you to import an SVG file as a component and use it just like a normal React component.
+Example:
+import { ReactComponent as Logo } from "./logo.svg";
+
+function App() {
+  return <Logo />;
+}
