@@ -11,6 +11,7 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Home from "./componets/routing/Home";
 import About from "./componets/routing/About";
 import Contact from "./componets/routing/Contact";
+import SVGasComponent from "./componets/SVGasComponent/SVGasComponent";
 
 const App = () => {
   return (
@@ -40,7 +41,7 @@ const App = () => {
       {/* <ReactVersion /> */}
 
       {/**********************************  Routing  ************************************************/}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <nav className=" space-x-4">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
@@ -51,7 +52,9 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+      <SVGasComponent />
     </div>
   );
 };

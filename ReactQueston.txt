@@ -1,0 +1,13 @@
+A.Mileston
+Hooks
+1.What are hooks?
+2.What rules need to be followed for hooks?
+
+Readcx
+1.What are the differences between Flux and Redux?
+
+Props
+1.What are default props?
+
+Others
+1.What is code-splitting?
