@@ -1,0 +1,8 @@
+Miscellaneous
+Hooks
+1.What are hooks?
+2.What rules need to be followed for hooks?
+3.What rules need to be followed for hooks?
+
+Others
+1.What are the differences between Flux and Redux?
