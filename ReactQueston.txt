@@ -11,6 +11,6 @@ Props
 
 Others
 1.What is code-splitting?
-
-
- 
+2.How to prevent a function from being called multiple times?
+3.What is the popular choice for form handling?
+4.What are the advantages of formik over redux form library?
