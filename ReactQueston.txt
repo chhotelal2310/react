@@ -2,15 +2,77 @@ A.Mileston
 Hooks
 1.What are hooks?
 2.What rules need to be followed for hooks?
+3.What is useEffect hook? How to fetch data with React Hooks?
+4.Why do we use array destructuring (square brackets notation) in useState?
+5.What is the difference between useState and useRef hook?
+6.What are the differences between useEffect and useLayoutEffect hooks?
+7.How is useReducer Different from useState?
+8.Can you describe the useMemo() Hook?
+9.Can Hooks be used in class components?
+10.What is an updater function? Should an updater function be used in all cases?
+11.Can useState take a function as an initial value?
+12.What types of values can useState hold?
+13.What happens if you call useState conditionally?
+14.is useState Synchronous or Asynchronous?
+15.Can you explain how useState works internally?
+16.What is useReducer? Why do you use useReducer?
+17.How does useReducer works? Explain with an example?
+18.Can you combine useReducer with useContext?
+19.Can you dispatch multiple actions in a row with useReducer?
+20.Is dispatch from useReducer asynchronous and does it update state immediately?
+22.When and how often does React invoke the setup and cleanup functions inside a useEffect hook?
+21.What happens if you return a Promise from useEffect??
+22.Can you have multiple useEffect hooks in a single component?
+23.How to prevent infinite loops with useEffect?
+24.What are the usecases of useLayoutEffect?
+25.How Do You Use useRef to Access a DOM Element in React? Give an example.
+26.Can you use useRef to persist values across renders??
+27.Can useRef be used to store previous values?
+28.How is useMemo different from useCallback?
+29.What is useCallback and why is it used?
+30.What is the useId hook and when should you use it?
+31.How do you handle cleanup in useEffect?
+32.What are the best practices for using React Hooks?
+33.What is the use() hook in React 19?
+34.What are the lifecycle methods of React?
+
+context
+1.What is useContext? What are the steps to follow for useContext?
+2.What are the use cases of useContext hook?
+3.When to use client and server components?
+4.How does useContext works? Explain with an example?
+5.Can You Use Multiple Contexts in One Component?
+
+
 
 Readcx
 1.What are the differences between Flux and Redux?
 
 Props
 1.What are default props?
+2.What is prop drilling?
 
 Others
 1.What is code-splitting?
 2.How to prevent a function from being called multiple times?
 3.What is the popular choice for form handling?
 4.What are the advantages of formik over redux form library?
+5.What is dynamic import?
+6.What are loadable components?
+7.When do you need to use refs?
+8.What is the difference between Real DOM and Virtual DOM?
+9.What is the purpose of eslint plugin for hooks?
+10.What is the difference between Imperative and Declarative in React?
+11.What are the benefits of using TypeScript with ReactJS?
+12.What is a wrapper component?
+13.What are the differences between Functional and Class Components?
+14.What is strict mode in React?
+15.hat is the benefit of strict mode?
+16.What are capture phase events?
+17.How does React updates screen in an application?
+18.What is React hydration?
+19.How do you update objects inside state?
+20.What are the differences between page router and app router in nextjs?
+
+formik
+1.What is formik?
