@@ -140,3 +140,28 @@ import { ReactComponent as Logo } from "./logo.svg";
 function App() {
   return <Logo />;
 }
+
+Advantages of SVG
+1.Scalable without losing quality
+2.Small file size
+4.Easy to customize
+5.Can change color with CSS
+6.Can animate
+7.Great for logos and icons
+
+
+OR
+
+SVG can be imported as a React component, allowing the SVG to behave like a reusable React component. This makes it possible to pass props,
+apply styles, handle events, and customize the SVG dynamically, which is not possible when using it as a normal image.
+import Logo from "./logo.svg?react";
+
+function App() {
+  return (
+    <Logo
+      width={100}
+      height={100}
+      className="logo"
+    />
+  );
+}
