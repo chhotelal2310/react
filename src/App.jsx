@@ -54,7 +54,7 @@ const App = () => {
         </Routes>
       </BrowserRouter> */}
 
-      <SVGasComponent />
+      {/* <SVGasComponent /> */}
     </div>
   );
 };
