@@ -36,6 +36,18 @@ Hooks
 33.What is the use() hook in React 19?
 34.What are the lifecycle methods of React?
 
+
+/*******************************************/
+a.useState
+b.useEffect
+c.useMemo
+d.useCallback
+e.useRef
+f.useReducer
+g.useContext
+h.useLayoutEffect
+i.useId
+
 context
 1.What is useContext? What are the steps to follow for useContext?
 2.What are the use cases of useContext hook?
