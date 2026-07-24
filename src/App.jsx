@@ -12,6 +12,7 @@ import Home from "./componets/routing/Home";
 import About from "./componets/routing/About";
 import Contact from "./componets/routing/Contact";
 import SVGasComponent from "./componets/SVGasComponent/SVGasComponent";
+import Hook1 from "./componets/hooks/UseStateHook";
 
 const App = () => {
   return (
@@ -55,6 +56,10 @@ const App = () => {
       </BrowserRouter> */}
 
       {/* <SVGasComponent /> */}
+
+      {/* ************************************* Hooks ******************************************************/}
+      {/* 1.UseState */}
+      <Hook1 />
     </div>
   );
 };
