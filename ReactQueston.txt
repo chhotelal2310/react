@@ -60,7 +60,7 @@ context
 Readcx
 1.What are the differences between Flux and Redux?
 
-Props
+Props (Done)
 1.What are default props?
 2.What is prop drilling?
 

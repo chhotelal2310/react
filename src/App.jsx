@@ -12,7 +12,8 @@ import Home from "./componets/routing/Home";
 import About from "./componets/routing/About";
 import Contact from "./componets/routing/Contact";
 import SVGasComponent from "./componets/SVGasComponent/SVGasComponent";
-import Hook1 from "./componets/hooks/UseStateHook";
+import  UseStateHook from "../src/componets/hooks/UseStateHook"
+
 
 const App = () => {
   return (
@@ -59,9 +60,11 @@ const App = () => {
 
       {/* ************************************* Hooks ******************************************************/}
       {/* 1.UseState */}
-      <Hook1 />
+      <UseStateHook />
     </div>
   );
 };
 
 export default App;
+
+

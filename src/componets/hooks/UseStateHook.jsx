@@ -1,12 +1,20 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-const Hook1 = () => {
+const UseStateHook = () => {
   const [count, setCount] = useState(0);
+
   return (
     <>
-      <h1 className="bg-red-700">{count}</h1>
-      <button onClick={() => setCount(count + 1)}>+</button>
+      <h1>{count}</h1>
+
+      <button
+        className="px-5 py-2 border border-red-500 rounded-lg"
+        onClick={() => setCount(count + 1)}
+      >
+        Increase
+      </button>
     </>
   );
 };
-export default Hook1;
+
+export default UseStateHook;
