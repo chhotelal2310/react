@@ -192,3 +192,31 @@ useEffect(() => {
 }, []);
 
 Note: The returned function is called the cleanup function.
+
+Timer Example
+Without cleanup:
+useEffect(() => {
+
+  setInterval(() => {
+    console.log("Hello");
+  }, 1000);
+
+}, []);
+
+Note: The timer keeps running even if the component is removed.
+
+
+With cleanup:
+useEffect(() => {
+
+  const id = setInterval(() => {
+    console.log("Hello");
+  }, 1000);
+
+  return () => {
+    clearInterval(id);
+  };
+
+}, []);
+
+Note: Now React clears the timer when the component unmounts.
