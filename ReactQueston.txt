@@ -3,16 +3,15 @@ Hooks
 1.What are hooks?
 2.What rules need to be followed for hooks?
 3.What is useEffect hook? How to fetch data with React Hooks?
-4.Why do we use array destructuring (square brackets notation) in useState?
 5.What is the difference between useState and useRef hook?
 6.What are the differences between useEffect and useLayoutEffect hooks?
 7.How is useReducer Different from useState?
 8.Can you describe the useMemo() Hook?
 9.Can Hooks be used in class components?
 10.What is an updater function? Should an updater function be used in all cases?
-11.Can useState take a function as an initial value?
-12.What types of values can useState hold?
-13.What happens if you call useState conditionally?
+11.Can useState take a function as an initial value? ===>done
+12.What types of values can useState hold? ===>done
+13.What happens if you call useState conditionally?===>done
 14.is useState Synchronous or Asynchronous?
 15.Can you explain how useState works internally?
 16.What is useReducer? Why do you use useReducer?
