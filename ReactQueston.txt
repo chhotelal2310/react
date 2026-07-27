@@ -13,7 +13,6 @@ Hooks
 12.What types of values can useState hold? ===>done
 13.What happens if you call useState conditionally?===>done
 14.is useState Synchronous or Asynchronous?
-15.Can you explain how useState works internally?
 16.What is useReducer? Why do you use useReducer?
 17.How does useReducer works? Explain with an example?
 18.Can you combine useReducer with useContext?

@@ -165,3 +165,30 @@ function App() {
     />
   );
 }
+
+/******************************************************************
+useEffect
+useEffect is a React Hook used to perform side effects in functional components. It runs after React renders the component and can be controlled using a dependency array to decide when the effect should run.
+What is a Side Effect?
+A side effect is any operation that affects something outside the React component.
+Examples:
+API calls
+Fetching data
+Setting timers
+
+Syntax
+useEffect(() => {
+
+}, []);
+
+
+Cleanup Function
+useEffect(() => {
+
+  return () => {
+
+  };
+
+}, []);
+
+Note: The returned function is called the cleanup function.
