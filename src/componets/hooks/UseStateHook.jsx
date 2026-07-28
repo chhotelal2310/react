@@ -24,29 +24,29 @@ export default UseStateHook;
 // Flow: User Click → setCount(newValue) → React Updates State → Component Re-renders → UI Updates
 
 /**************************************** Example-3**********************************/
-import { useState } from "react";
+// import { useState } from "react";
 
-function App() {
-  const [count, setCount] = useState(0);
+// function App() {
+//   const [count, setCount] = useState(0);
 
-  const increase = () => {
-    console.log("Before:", count);
+//   const increase = () => {
+//     console.log("Before:", count);
 
-    setCount(count + 1);
+//     setCount(count + 1);
 
-    console.log("After:", count);
-  };
+//     console.log("After:", count);
+//   };
 
-  return (
-    <>
-      <h1>{count}</h1>
+//   return (
+//     <>
+//       <h1>{count}</h1>
 
-      <button onClick={increase}>
-        Increase
-      </button>
-    </>
-  );
-}
+//       <button onClick={increase}>
+//         Increase
+//       </button>
+//     </>
+//   );
+// }
 
 // Important Point
 // What do you expect?
@@ -59,7 +59,6 @@ function App() {
 // But actually you'll get
 // Before: 0
 // After: 0
-
 
 // Explaination:
 // It simply tells React

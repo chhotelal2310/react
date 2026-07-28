@@ -172,9 +172,16 @@ useEffect is a React Hook used to perform side effects in functional components.
 What is a Side Effect?
 A side effect is any operation that affects something outside the React component.
 Examples:
-API calls
-Fetching data
-Setting timers
+a.API calls
+b.Fetching data
+c.Setting timers
+
+
+
+
+
+
+
 
 Syntax
 useEffect(() => {
