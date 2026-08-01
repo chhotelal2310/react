@@ -227,3 +227,26 @@ useEffect(() => {
 }, []);
 
 Note: Now React clears the timer when the component unmounts.
+
+Because useEffect expects its callback function to return either nothing (undefined) or a cleanup function.
+An async function always returns a Promise, which React cannot use as a cleanup function.
+syntax is:
+useEffect(() => {
+  // Side effect code
+
+  return () => {
+    // Cleanup function (optional)
+  };
+}, []);
+
+Note:The callback passed to useEffect should return only one of these two things:
+1.Nothing (undefined)
+2.A cleanup function
+Like this:
+useEffect(() => {
+  console.log("Component Mounted");
+
+  return () => {
+    console.log("Component Unmounted");
+  };
+}, []);

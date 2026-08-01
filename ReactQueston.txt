@@ -2,7 +2,7 @@ A.Mileston
 Hooks
 1.What are hooks?
 2.What rules need to be followed for hooks?
-3.What is useEffect hook? How to fetch data with React Hooks?
+3.What is useEffect hook? How to fetch data with React Hooks?===>done
 5.What is the difference between useState and useRef hook?
 6.What are the differences between useEffect and useLayoutEffect hooks?
 7.How is useReducer Different from useState?

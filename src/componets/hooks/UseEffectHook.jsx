@@ -82,7 +82,6 @@ import { useEffect, useState } from "react";
 
 const UseEffectHook = () => {
   const [users, setUsers] = useState([]);
-let count=0;
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
