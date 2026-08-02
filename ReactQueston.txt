@@ -19,9 +19,9 @@ Hooks
 19.Can you dispatch multiple actions in a row with useReducer?
 20.Is dispatch from useReducer asynchronous and does it update state immediately?
 22.When and how often does React invoke the setup and cleanup functions inside a useEffect hook?
-21.What happens if you return a Promise from useEffect??
-22.Can you have multiple useEffect hooks in a single component?
-23.How to prevent infinite loops with useEffect?
+21.What happens if you return a Promise from useEffect??===>done
+22.Can you have multiple useEffect hooks in a single component?===>done
+23.How to prevent infinite loops with useEffect?===>psssing empty dependency array or currect dependancy array.
 24.What are the usecases of useLayoutEffect?
 25.How Do You Use useRef to Access a DOM Element in React? Give an example.
 26.Can you use useRef to persist values across renders??
