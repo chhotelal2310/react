@@ -14,6 +14,7 @@ import Contact from "./componets/routing/Contact";
 import SVGasComponent from "./componets/SVGasComponent/SVGasComponent";
 import UseStateHook from "../src/componets/hooks/UseStateHook";
 import UseEffectHook from "./componets/hooks/UseEffectHook";
+import UseCallbackHook from "./componets/hooks/UseCallbackHook";
 
 const App = () => {
   return (
@@ -60,7 +61,8 @@ const App = () => {
 
       {/* ************************************* Hooks ******************************************************/}
       {/* <UseStateHook /> */}
-      <UseEffectHook />
+      {/* <UseEffectHook /> */}
+      <UseCallbackHook/>
     </div>
   );
 };

@@ -19,7 +19,7 @@ Hooks
 5.What is the difference between useState and useRef hook?
 6.What are the differences between useEffect and useLayoutEffect hooks?
 7.How is useReducer Different from useState?
-8.Can you describe the useMemo() Hook?
+8.Can you describe the useMemo() Hook?===>done
 9.Can Hooks be used in class components?
 
 
