@@ -9,6 +9,7 @@
 21.What happens if you return a Promise from useEffect??===>done
 22.Can you have multiple useEffect hooks in a single component?===>done
 23.How to prevent infinite loops with useEffect?===>psssing empty dependency array or currect dependancy array.
+29.What is useCallback and why is it used?===>Done
 
 
 /***********************************************************************8
@@ -37,7 +38,7 @@ Hooks
 26.Can you use useRef to persist values across renders??
 27.Can useRef be used to store previous values?
 28.How is useMemo different from useCallback?
-29.What is useCallback and why is it used?
+
 30.What is the useId hook and when should you use it?
 31.How do you handle cleanup in useEffect?
 32.What are the best practices for using React Hooks?
