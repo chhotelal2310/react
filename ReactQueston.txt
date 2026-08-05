@@ -10,6 +10,10 @@
 22.Can you have multiple useEffect hooks in a single component?===>done
 23.How to prevent infinite loops with useEffect?===>psssing empty dependency array or currect dependancy array.
 29.What is useCallback and why is it used?===>Done
+25.How Do You Use useRef to Access a DOM Element in React? Give an example.===>done
+26.Can you use useRef to persist values across renders??===>doen
+8.Can you describe the useMemo() Hook?===>done
+27.Can useRef be used to store previous values?===>done
 
 
 /***********************************************************************8
@@ -20,25 +24,15 @@ Hooks
 5.What is the difference between useState and useRef hook?
 6.What are the differences between useEffect and useLayoutEffect hooks?
 7.How is useReducer Different from useState?
-8.Can you describe the useMemo() Hook?===>done
 9.Can Hooks be used in class components?
-
-
-
-
 16.What is useReducer? Why do you use useReducer?
 17.How does useReducer works? Explain with an example?
 18.Can you combine useReducer with useContext?
 19.Can you dispatch multiple actions in a row with useReducer?
 20.Is dispatch from useReducer asynchronous and does it update state immediately?
 22.When and how often does React invoke the setup and cleanup functions inside a useEffect hook?
-
 24.What are the usecases of useLayoutEffect?
-25.How Do You Use useRef to Access a DOM Element in React? Give an example.
-26.Can you use useRef to persist values across renders??
-27.Can useRef be used to store previous values?
 28.How is useMemo different from useCallback?
-
 30.What is the useId hook and when should you use it?
 31.How do you handle cleanup in useEffect?
 32.What are the best practices for using React Hooks?
