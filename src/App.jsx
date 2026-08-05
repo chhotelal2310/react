@@ -15,6 +15,8 @@ import SVGasComponent from "./componets/SVGasComponent/SVGasComponent";
 import UseStateHook from "../src/componets/hooks/UseStateHook";
 import UseEffectHook from "./componets/hooks/UseEffectHook";
 import UseCallbackHook from "./componets/hooks/UseCallbackHook";
+import UseMemoHook from "./componets/hooks/UseMemoHook";
+import UserRefHook from "./componets/hooks/UserRefHook";
 
 const App = () => {
   return (
@@ -62,7 +64,9 @@ const App = () => {
       {/* ************************************* Hooks ******************************************************/}
       {/* <UseStateHook /> */}
       {/* <UseEffectHook /> */}
-      <UseCallbackHook/>
+      {/* <UseMemoHook /> */}
+      {/* <UseCallbackHook/> */}
+      <UserRefHook/>
     </div>
   );
 };

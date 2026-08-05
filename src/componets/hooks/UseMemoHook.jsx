@@ -7,9 +7,6 @@ const users = [
   { id: 4, name: "Johnny" },
 ];
 
-
-import React from 'react'
-
 const UseMemoHook = () => {
    const [search, setSearch] = useState("");
   const [count, setCount] = useState(0);
