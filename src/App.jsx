@@ -17,6 +17,7 @@ import UseEffectHook from "./componets/hooks/UseEffectHook";
 import UseCallbackHook from "./componets/hooks/UseCallbackHook";
 import UseMemoHook from "./componets/hooks/UseMemoHook";
 import UserRefHook from "./componets/hooks/UserRefHook";
+import UseLayoutEffect from "./componets/hooks/UseLayoutEffect";
 
 const App = () => {
   return (
@@ -66,7 +67,8 @@ const App = () => {
       {/* <UseEffectHook /> */}
       {/* <UseMemoHook /> */}
       {/* <UseCallbackHook/> */}
-      <UserRefHook/>
+      {/* <UserRefHook/> */}
+      <UseLayoutEffect/>
     </div>
   );
 };
