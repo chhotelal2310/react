@@ -19,6 +19,9 @@
 6.What are the differences between useEffect and useLayoutEffect hooks?===>done
 31.How do you handle cleanup in useEffect?=======>done
 30.What is the useId hook and when should you use it?===>done
+28.How is  different between useMemo & useCallback?
+9.Can Hooks be used in class components?===>done
+22.When and how often does React invoke the setup and cleanup functions inside a useEffect hook?==>done
 
 
 /***********************************************************************8
@@ -26,16 +29,11 @@ A.Mileston
 Hooks
 
 7.How is useReducer Different from useState?
-9.Can Hooks be used in class components?
 16.What is useReducer? Why do you use useReducer?
 17.How does useReducer works? Explain with an example?
 18.Can you combine useReducer with useContext?
 19.Can you dispatch multiple actions in a row with useReducer?
 20.Is dispatch from useReducer asynchronous and does it update state immediately?
-22.When and how often does React invoke the setup and cleanup functions inside a useEffect hook?
-
-28.How is useMemo different from useCallback?
-
 
 32.What are the best practices for using React Hooks?
 33.What is the use() hook in React 19?
