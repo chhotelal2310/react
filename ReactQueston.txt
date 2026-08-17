@@ -22,6 +22,8 @@
 28.How is  different between useMemo & useCallback?
 9.Can Hooks be used in class components?===>done
 22.When and how often does React invoke the setup and cleanup functions inside a useEffect hook?==>done
+32.What are the best practices for using React Hooks?===>done
+33.What is the use() hook in React 19?===>done
 
 
 /***********************************************************************8
@@ -35,8 +37,8 @@ Hooks
 19.Can you dispatch multiple actions in a row with useReducer?
 20.Is dispatch from useReducer asynchronous and does it update state immediately?
 
-32.What are the best practices for using React Hooks?
-33.What is the use() hook in React 19?
+
+
 34.What are the lifecycle methods of React?
 
 
