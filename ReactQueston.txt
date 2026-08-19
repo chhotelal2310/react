@@ -1,3 +1,4 @@
+A.Mileston
 1.What are hooks?===>done
 2.What rules need to be followed for hooks?==>done
 3.What is useEffect hook? How to fetch data with React Hooks?===>done
@@ -24,6 +25,7 @@
 22.When and how often does React invoke the setup and cleanup functions inside a useEffect hook?==>done
 32.What are the best practices for using React Hooks?===>done
 33.What is the use() hook in React 19?===>done
+34.What are the lifecycle methods of React?===>done
 
 
 /***********************************************************************8
@@ -39,7 +41,7 @@ Hooks
 
 
 
-34.What are the lifecycle methods of React?
+
 
 
 /*******************************************/
