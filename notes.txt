@@ -1,0 +1,389 @@
+useContext is a React Hook used to consume data from Context without passing props through every intermediate component. We create a Context using createContext, provide data using a Provider, and read it using useContext. It is commonly used for shared data such as authentication, themes, and language settings. Context avoids prop drilling, but Context itself is not a complete replacement for state-management libraries.
+
+                       OR
+
+useContext is a React Hook used to share data between components without passing props manually through every level.
+
+Easy formula to remember
+
+createContext()
+      ↓
+Provider
+      ↓
+value
+      ↓
+useContext()
+      ↓
+Component gets data
+
+3. Three important things
+
+To use Context, remember:
+
+1. createContext()
+2. Context.Provider
+3. useContext()
+
+
+How useContext works
+
+FLOW:
+createContext()
+      ↓
+UserContext
+      ↓
+Provider
+      ↓
+value={user}
+      ↓
+Child Component
+      ↓
+useContext(UserContext)
+      ↓
+Gets user
+
+Nested Providers
+This is important in interviews.
+
+<UserContext.Provider value="Rahul">
+  <A />
+
+  <UserContext.Provider value="Amit">
+    <B />
+  </UserContext.Provider>
+</UserContext.Provider>
+
+A gets:
+Rahul
+
+B gets:
+Amit
+
+Because React uses the nearest Provider.
+
+Outer Provider
+value = Rahul
+      ↓
+      A → Rahul
+
+Inner Provider
+value = Amit
+      ↓
+      B → Amit
+
+
+
+Custom Context Hook
+
+const AuthContext = createContext();
+
+export function useAuth() {
+  return useContext(AuthContext);
+}
+
+useContext rules
+
+1. useContext is a Hook.
+2. Call it at the top level of your component/custom Hook.
+3. It reads the nearest matching Context value.
+4. Context avoids prop drilling.
+5. Context itself is not state.
+6. Provider supplies the value.
+7. Consumers read the value.
+8. Changing the provided value can update consumers.
+
+Q2. Why do we use Context?
+To avoid prop drilling when the same data is needed by deeply nested components.
+
+Q3. What is Prop Drilling?
+
+Passing props through components that don't actually need the data, just so a deeper component can receive it.
+
+A → B → C → D
+        data needed by D
+
+A passes to B, B passes to C, C passes to D.
+
+Q8. Which Provider is used when multiple Providers exist?
+
+The nearest Provider in the component tree.
+
+
+
+
+Q12. What happens when Context value changes?
+
+Consumers using that Context may re-render with the new value.
+
+Q15. What is the biggest advantage of useContext?
+
+Avoid prop drilling
+        ↓
+Cleaner component tree
+        ↓
+Easy access to shared data
+
+
+/****************************************************************/
+Common use cases:
+🌙 Dark/Light theme
+👤 Logged-in user
+🌐 Language
+🛒 Shopping cart
+⚙️ App settings
+
+Context generally has three steps:
+
+1. createContext()
+       ↓
+2. Provider
+       ↓
+3. useContext()
+
+Step 1 — Create Context
+
+import { createContext } from "react";
+
+const UserContext = createContext();
+
+export default UserContext;
+
+
+Step 2 — Provide data
+
+import { useState } from "react";
+import UserContext from "./UserContext";
+
+function UserProvider({ children }) {
+  const [user, setUser] = useState({
+    name: "Chhotelal",
+    role: "Developer"
+  });
+
+  return (
+    <UserContext.Provider value={{ user, setUser }}>
+      {children}
+    </UserContext.Provider>
+  );
+}
+
+export default UserProvider;
+
+
+Step 3 — Consume using useContext
+
+import { useContext } from "react";
+import UserContext from "./UserContext";
+
+function Profile() {
+  const { user } = useContext(UserContext);
+
+  return <h2>Hello {user.name}</h2>;
+}
+
+
+
+What is Provider?
+Provider is responsible for making context data available to child components.
+
+<UserContext.Provider value={user}>
+   <Profile />
+</UserContext.Provider>
+
+
+Q2. Why do we use Context?
+
+Answer:
+
+Mainly to avoid prop drilling and share common data across multiple components.
+
+
+Q3. What is prop drilling?
+
+Answer:
+
+Prop drilling means passing data through multiple intermediate components even though those components don't need the data themselves.
+
+
+Q5. What is a Context Provider?
+
+Answer:
+
+A Provider supplies a context value to all components below it in the component tree.
+
+Most important points to remember
+createContext() → creates Context.
+Provider → provides the value.
+useContext() → consumes/reads the value.
+Helps avoid prop drilling.
+Context itself is not state management.
+Nearest Provider wins.
+Context can contain state, functions, objects, etc.
+Changing the context value can cause consumers to re-render.
+Don't put everything into one huge Context.
+Common uses: theme, user/auth, language, settings, cart.
+
+
+
+/******************************************************************************/
+/******************************************************************************/
+What is useContext?
+useContext is a React Hook used to read data from a Context without manually passing that data through props at every level.
+The basic problem it solves is called prop drilling.
+
+
+Context and useReducer
+
+For larger state management, Context is often combined with useReducer.
+
+For example:
+
+const initialState = {
+    count: 0
+};
+
+Reducer:
+
+function reducer(state, action) {
+
+    switch (action.type) {
+
+        case "INCREMENT":
+            return {
+                ...state,
+                count: state.count + 1
+            };
+
+        case "DECREMENT":
+            return {
+                ...state,
+                count: state.count - 1
+            };
+
+        default:
+            return state;
+    }
+}
+
+Provider:
+
+
+function CounterProvider({ children }) {
+
+    const [state, dispatch] = useReducer(
+        reducer,
+        initialState
+    );
+
+    return (
+        <CounterContext.Provider
+            value={{
+                state,
+                dispatch
+            }}
+        >
+            {children}
+        </CounterContext.Provider>
+    );
+}
+
+
+
+Consumer:
+function Counter() {
+
+    const {
+        state,
+        dispatch
+    } = useContext(CounterContext);
+
+    return (
+        <>
+            <h1>{state.count}</h1>
+
+            <button
+                onClick={() =>
+                    dispatch({
+                        type: "INCREMENT"
+                    })
+                }
+            >
+                +
+            </button>
+        </>
+    );
+}
+
+
+Now you have:
+
+Context
+   +
+useReducer
+   =
+centralized state management
+
+
+
+
+55. A simple interview answer to memorize
+
+If the interviewer asks:
+
+"Explain useContext in React."
+
+A strong answer would be:
+
+"useContext is a React Hook that allows components to consume values from a React Context without passing those values through intermediate components using props. It is commonly used to solve prop drilling and share values such as authentication information, themes, localization, and application configuration. We create a Context using createContext, provide a value using its Provider, and consume that value using useContext. Context itself is primarily a value-sharing mechanism, so for state management it is commonly combined with useState or useReducer. For performance, large or frequently changing contexts should be designed carefully, and unrelated state can be split into separate contexts."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -18,10 +18,15 @@ import UseCallbackHook from "./componets/hooks/UseCallbackHook";
 import UseMemoHook from "./componets/hooks/UseMemoHook";
 import UserRefHook from "./componets/hooks/UserRefHook";
 import UseLayoutEffect from "./componets/hooks/UseLayoutEffect";
+import ThemeContext from "./componets/hooks/context/ThemeContext";
+import ThemeApp from "./componets/hooks/context/ThemeContext";
+import Dashboard from "./componets/hooks/context/Dashboard";
+import CounterProvider from "./componets/hooks/context/CounterProvider";
+import Counter from "./componets/hooks/context/Counter";
 
 const App = () => {
   return (
-    <div>
+    <>
       {/* <BookStore/> */}
       {/*************************** Controll and UnControll Component **************************/}
       {/* <ControllAndUncontrollComponent /> */}
@@ -68,8 +73,14 @@ const App = () => {
       {/* <UseMemoHook /> */}
       {/* <UseCallbackHook/> */}
       {/* <UserRefHook/> */}
-      <UseLayoutEffect/>
-    </div>
+      {/* <UseLayoutEffect/> */}
+      {/* <ThemeApp>
+        <Dashboard />
+      </ThemeApp> */}
+      <CounterProvider>
+        <Counter/>
+      </CounterProvider>
+    </>
   );
 };
 

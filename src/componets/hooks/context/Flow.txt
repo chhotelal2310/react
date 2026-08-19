@@ -1,0 +1,14 @@
+App
+ │
+ ├── theme = light
+ │
+ ├── setTheme
+ │
+ ▼
+Context Provider
+ │
+ ▼
+Dashboard
+ │
+ ├── read theme
+ └── update theme
