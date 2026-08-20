@@ -21,8 +21,10 @@ import UseLayoutEffect from "./componets/hooks/UseLayoutEffect";
 import ThemeContext from "./componets/hooks/context/ThemeContext";
 import ThemeApp from "./componets/hooks/context/ThemeContext";
 import Dashboard from "./componets/hooks/context/Dashboard";
-import CounterProvider from "./componets/hooks/context/CounterProvider";
-import Counter from "./componets/hooks/context/Counter";
+import { CounterProvider } from "./componets/hooks/context/counterwithreducer/CounterProvider";
+import Counter from "./componets/hooks/context/counterwithreducer/Counter";
+// import CounterProvider, { CounterContext } from "./componets/hooks/context/CounterProvider";
+// import Counter from "./componets/hooks/context/Counter";
 
 const App = () => {
   return (
@@ -74,11 +76,18 @@ const App = () => {
       {/* <UseCallbackHook/> */}
       {/* <UserRefHook/> */}
       {/* <UseLayoutEffect/> */}
+
+      {/********************************************Context*****************************************************/}
       {/* <ThemeApp>
         <Dashboard />
       </ThemeApp> */}
+      {/* Without Reducer Counter*/}
+      {/* <CounterProvider>
+        <Counter />
+      </CounterProvider> */}
+      {/* With Reducer Counter*/}
       <CounterProvider>
-        <Counter/>
+        <Counter />
       </CounterProvider>
     </>
   );
