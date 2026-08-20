@@ -23,6 +23,8 @@ import ThemeApp from "./componets/hooks/context/ThemeContext";
 import Dashboard from "./componets/hooks/context/Dashboard";
 import { CounterProvider } from "./componets/hooks/context/counterwithreducer/CounterProvider";
 import Counter from "./componets/hooks/context/counterwithreducer/Counter";
+import ProfileCard from "./componets/hooks/context/theme/ProfileCard";
+import { ThemeProvider } from "./componets/hooks/context/theme/ThemeContext";
 // import CounterProvider, { CounterContext } from "./componets/hooks/context/CounterProvider";
 // import Counter from "./componets/hooks/context/Counter";
 
@@ -86,9 +88,13 @@ const App = () => {
         <Counter />
       </CounterProvider> */}
       {/* With Reducer Counter*/}
-      <CounterProvider>
+      {/* <CounterProvider>
         <Counter />
-      </CounterProvider>
+      </CounterProvider> */}
+      {/* Theme light & dark */}
+      <ThemeProvider>
+        <ProfileCard />
+      </ThemeProvider>
     </>
   );
 };
