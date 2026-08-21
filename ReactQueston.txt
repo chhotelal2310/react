@@ -27,6 +27,10 @@ A.Mileston
 33.What is the use() hook in React 19?===>done
 34.What are the lifecycle methods of React?===>done
 
+context
+1.What is useContext? What are the steps to follow for useContext?===>done
+2.What are the use cases of useContext hook?===>done
+4.How does useContext works? Explain with an example?==>done
 
 /***********************************************************************8
 A.Mileston
@@ -45,22 +49,13 @@ Hooks
 
 
 /*******************************************/
-a.useState
-b.useEffect
-c.useMemo
-d.useCallback
-e.useRef
-f.useReducer
-g.useContext
-h.useLayoutEffect
-i.useId
 
-context
-1.What is useContext? What are the steps to follow for useContext?
-2.What are the use cases of useContext hook?
-3.When to use client and server components?
-4.How does useContext works? Explain with an example?
-5.Can You Use Multiple Contexts in One Component?
+f.useReducer
+
+
+
+
+
 
 
 
