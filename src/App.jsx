@@ -25,6 +25,7 @@ import { CounterProvider } from "./componets/hooks/context/counterwithreducer/Co
 import Counter from "./componets/hooks/context/counterwithreducer/Counter";
 import ProfileCard from "./componets/hooks/context/theme/ProfileCard";
 import { ThemeProvider } from "./componets/hooks/context/theme/ThemeContext";
+import UseReducerHook from "./componets/hooks/usereducer/UseReducerHook";
 // import CounterProvider, { CounterContext } from "./componets/hooks/context/CounterProvider";
 // import Counter from "./componets/hooks/context/Counter";
 
@@ -92,9 +93,12 @@ const App = () => {
         <Counter />
       </CounterProvider> */}
       {/* Theme light & dark */}
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <ProfileCard />
-      </ThemeProvider>
+      </ThemeProvider> */}
+
+      {/* /***************************************** UseReducer Hooks *********************************************/}
+      <UseReducerHook/>
     </>
   );
 };

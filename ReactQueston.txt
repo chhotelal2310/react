@@ -32,12 +32,14 @@ context
 2.What are the use cases of useContext hook?===>done
 4.How does useContext works? Explain with an example?==>done
 
+reducer
+16.What is useReducer? Why do you use useReducer?===>done
+
 /***********************************************************************8
 A.Mileston
 Hooks
 
 7.How is useReducer Different from useState?
-16.What is useReducer? Why do you use useReducer?
 17.How does useReducer works? Explain with an example?
 18.Can you combine useReducer with useContext?
 19.Can you dispatch multiple actions in a row with useReducer?
