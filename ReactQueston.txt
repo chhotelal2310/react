@@ -34,32 +34,13 @@ context
 
 reducer
 16.What is useReducer? Why do you use useReducer?===>done
+17.How does useReducer works? Explain with an example?==>done
+18.Can you combine useReducer with useContext?===>done
+19.Can you dispatch multiple actions in a row with useReducer?===>done
+20.Is dispatch from useReducer asynchronous and does it update state immediately?===>done
+7.How is useReducer Different from useState?==>done
 
 /***********************************************************************8
-A.Mileston
-Hooks
-
-7.How is useReducer Different from useState?
-17.How does useReducer works? Explain with an example?
-18.Can you combine useReducer with useContext?
-19.Can you dispatch multiple actions in a row with useReducer?
-20.Is dispatch from useReducer asynchronous and does it update state immediately?
-
-
-
-
-
-
-/*******************************************/
-
-f.useReducer
-
-
-
-
-
-
-
 
 Readcx
 1.What are the differences between Flux and Redux?
