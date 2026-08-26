@@ -22,12 +22,14 @@ import ThemeContext from "./componets/hooks/context/ThemeContext";
 import ThemeApp from "./componets/hooks/context/ThemeContext";
 import Dashboard from "./componets/hooks/context/Dashboard";
 import { CounterProvider } from "./componets/hooks/context/counterwithreducer/CounterProvider";
-import Counter from "./componets/hooks/context/counterwithreducer/Counter";
+// import Counter from "./componets/hooks/context/counterwithreducer/Counter";
 import ProfileCard from "./componets/hooks/context/theme/ProfileCard";
 import { ThemeProvider } from "./componets/hooks/context/theme/ThemeContext";
 import UseReducerHook from "./componets/hooks/usereducer/UseReducerHook";
 // import CounterProvider, { CounterContext } from "./componets/hooks/context/CounterProvider";
 // import Counter from "./componets/hooks/context/Counter";
+import Counter from "./componets/redux/components/Counter"
+
 
 const App = () => {
   return (
@@ -98,7 +100,8 @@ const App = () => {
       </ThemeProvider> */}
 
       {/* /***************************************** UseReducer Hooks *********************************************/}
-      <UseReducerHook/>
+      {/* <UseReducerHook/> */}
+      <Counter/>
     </>
   );
 };
