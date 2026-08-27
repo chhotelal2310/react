@@ -26,9 +26,10 @@ import { CounterProvider } from "./componets/hooks/context/counterwithreducer/Co
 import ProfileCard from "./componets/hooks/context/theme/ProfileCard";
 import { ThemeProvider } from "./componets/hooks/context/theme/ThemeContext";
 import UseReducerHook from "./componets/hooks/usereducer/UseReducerHook";
+import Counter from "./componets/reduxtoolkit/Counter";
 // import CounterProvider, { CounterContext } from "./componets/hooks/context/CounterProvider";
 // import Counter from "./componets/hooks/context/Counter";
-import Counter from "./componets/redux/components/Counter"
+// import Counter from "./componets/redux/components/Counter"
 
 
 const App = () => {
@@ -101,6 +102,7 @@ const App = () => {
 
       {/* /***************************************** UseReducer Hooks *********************************************/}
       {/* <UseReducerHook/> */}
+      {/* <Counter/> */}
       <Counter/>
     </>
   );
