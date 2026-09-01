@@ -43,7 +43,6 @@ reducer
 /***********************************************************************8
 
 Readcx
-1.What are the differences between Flux and Redux?
 
 Props (Done)
 1.What are default props?
