@@ -49,3 +49,4 @@ Others
 
 
 /***********************************************************************8
+a.Worked on nowory admin panel clean the unwanted code, code optimization and fixed the issue.
