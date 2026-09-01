@@ -40,35 +40,12 @@ reducer
 20.Is dispatch from useReducer asynchronous and does it update state immediately?===>done
 7.How is useReducer Different from useState?==>done
 
-/***********************************************************************8
-
-Readcx
-
-Props (Done)
-1.What are default props?
-2.What is prop drilling?
-
 Others
-1.What is code-splitting?
-2.How to prevent a function from being called multiple times?
-3.What is the popular choice for form handling?
-4.What are the advantages of formik over redux form library?
-5.What is dynamic import?
-6.What are loadable components?
-7.When do you need to use refs?
-8.What is the difference between Real DOM and Virtual DOM?
-9.What is the purpose of eslint plugin for hooks?
-10.What is the difference between Imperative and Declarative in React?
-11.What are the benefits of using TypeScript with ReactJS?
-12.What is a wrapper component?
-13.What are the differences between Functional and Class Components?
-14.What is strict mode in React?
-15.hat is the benefit of strict mode?
-16.What are capture phase events?
-17.How does React updates screen in an application?
-18.What is React hydration?
-19.How do you update objects inside state?
-20.What are the differences between page router and app router in nextjs?
+1.What is code-splitting?==>done
+7.When do you need to use refs?==>done (use by github repo);
+8.What is the difference between Real DOM and Virtual DOM?==>done
+13.What are the differences between Functional and Class Components?==>done (use by github repo)
+16.What are capture phase events?===>done (use by github repo)
 
-formik
-1.What is formik?
+
+/***********************************************************************8
